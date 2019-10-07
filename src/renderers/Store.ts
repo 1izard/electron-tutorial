@@ -6,11 +6,10 @@ export interface IState {
     User: IUser;
 }
 
-const combineReducer = combineReducers<IState>({
-    User: UserReducer,
+const combinedReducer = combineReducers<IState>({
+    User: UserReducer
 });
 
-export const store = createStore(combineReducer);
+export const store = createStore(combinedReducer);
 
 export default store;
-
