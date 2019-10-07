@@ -10,8 +10,8 @@ class UserForm extends React.Component<IUser, {}> {
         return (
             <div>
                 <p>
-                    <TextBox label="Username" type="text" value={this.props.name}
-                        onChangeText={this.onChangeText} />
+                    <TextBox label="Username" type="text" value={this.props.name} 
+                        onChangeText={this.onChangeText}></TextBox>
                 </p>
                 <p>Name: {this.props.name}</p>
             </div>
@@ -25,6 +25,6 @@ class UserForm extends React.Component<IUser, {}> {
 
 const mapStateToProps = (state: IState) => {
     return state.User;
-}
+};
 
 export default connect(mapStateToProps)(UserForm);

@@ -9,17 +9,17 @@ interface IProps {
 
 export class TextBox extends React.Component<IProps, {}> {
     public render() {
-        const label = (!!this.props.label) ?
+        const label = (!!this.props.label) ? 
             <label>{this.props.label}</label> : null;
         return (
             <span>
                 {label}
-                <input name="username" type={this.props.type} value={this.props.value} 
-                    onChange={this.onChangeText} />
+                <input name="username" type={this.props.type} 
+                    value={this.props.value} onChange={this.onChangeText}></input>
             </span>
         );
     }
-
+    
     private onChangeText = (e: React.ChangeEvent<HTMLInputElement>) => {
         this.props.onChangeText(e.target.value);
     }

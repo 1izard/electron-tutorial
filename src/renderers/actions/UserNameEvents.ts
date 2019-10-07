@@ -9,7 +9,7 @@ export interface IChangeUserNameAction extends Redux.Action {
 
 export const createChangeUserNameAction: Redux.ActionCreator<IChangeUserNameAction> = (name: string) => {
     return {
-        name: name,
+        name,
         type: CHANGE_USER_NAME
     };
-}
+};
