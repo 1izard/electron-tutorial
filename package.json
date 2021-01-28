@@ -27,7 +27,7 @@
     "@types/redux": "^3.6.0",
     "@types/uuid": "^3.4.5",
     "clone": "^2.1.2",
-    "electron": "^6.0.11",
+    "electron": "^9.4.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-redux": "^7.1.1",
